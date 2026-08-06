@@ -197,19 +197,3 @@ check, `fail` for an executed unsuccessful check, and `skip` when an optional
 dependency is unavailable. A skipped `legacy_mshr` check is not a passed
 legacy-mesh reproduction. The deterministic report is written to
 `outputs/verification/report.json`.
-
-## Provenance
-
-The protected residual fixtures and their SHA-256 digests are in
-`docs/provenance/`. [Mathematical forms](docs/mathematical_forms.md) records
-which legacy entry point governs each workflow. `data/manifest.json` records
-the original source locations and checksums for copied scientific inputs.
-These manifests describe provenance; the repository never writes to the
-source locations.
-
-## Citation and License
-
-No citation metadata was supplied, so there is no `CITATION.cff`.
-No open-source license was supplied. There is no `LICENSE`, and reuse
-permission is not granted by this repository. Contact the project owners
-before reuse or redistribution.
