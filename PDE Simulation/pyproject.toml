@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lung-pde"
+version = "0.1.0"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "numpy>=2.2,<2.3",
+  "scipy>=1.15,<1.16",
+  "PyYAML>=6.0,<7",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8,<9",
+  "tomli>=2,<3; python_version < '3.11'",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "fenics: requires FEniCS/DOLFIN",
+  "slow: long numerical regression",
+  "requires_mshr: requires the optional legacy mshr backend",
+]

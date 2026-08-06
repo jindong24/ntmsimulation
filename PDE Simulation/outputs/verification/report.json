@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "detail": "30 scientific inputs structurally and all manifest checksums verified",
+      "name": "data_inputs",
+      "status": "pass"
+    },
+    {
+      "detail": "four calibration pipelines, parameter catalog, and 170 cases verified",
+      "name": "configurations",
+      "status": "pass"
+    },
+    {
+      "detail": "four CLI help and validation surfaces verified",
+      "name": "cli_surfaces",
+      "status": "pass"
+    },
+    {
+      "detail": "three fixture checksums and four protected-form AST parity checks verified",
+      "name": "weak_forms",
+      "status": "pass"
+    },
+    {
+      "detail": "withdrawn plotting, heatmap, figure, and LaTeX artifacts are absent",
+      "name": "withdrawn_artifacts",
+      "status": "pass"
+    },
+    {
+      "detail": "pytest passed (import-safe tests; marker: not fenics and not slow)",
+      "name": "pure_tests",
+      "status": "pass"
+    },
+    {
+      "detail": "pytest passed (rectangle smoke tests; marker: fenics and not slow)",
+      "name": "fenics_tests",
+      "status": "pass"
+    },
+    {
+      "detail": "mshr unavailable; legacy_mshr numerical reproduction was not run",
+      "name": "legacy_mshr",
+      "status": "skip"
+    }
+  ],
+  "overall_status": "pass",
+  "schema_version": 1
+}

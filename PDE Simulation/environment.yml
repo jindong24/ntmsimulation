@@ -1,0 +1,11 @@
+name: lung-pde
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - fenics=2019.1.0
+  - numpy>=2.2,<2.3
+  - scipy>=1.15,<1.16
+  - pyyaml>=6,<7
+  - pytest>=8,<9
+  - pip

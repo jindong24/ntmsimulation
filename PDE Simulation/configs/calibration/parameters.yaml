@@ -1,0 +1,16 @@
+parameters:
+  - {name: DB1, symbol: D_B1, meaning: mucus bacterial diffusivity, transform: log}
+  - {name: DB2, symbol: D_B2, meaning: tissue bacterial diffusivity, transform: log}
+  - {name: lambdaB, symbol: lambda_B, meaning: bacterial growth rate, transform: log}
+  - {name: KB, symbol: K_B, meaning: bacterial carrying capacity, transform: log}
+  - {name: KBi, symbol: K_Bi, meaning: interaction half-saturation constant, transform: log}
+  - {name: dMb, symbol: d_Mb, meaning: bacteria-macrophage interaction rate, transform: log}
+  - {name: dB, symbol: d_B, meaning: bacterial clearance coefficient, transform: log}
+  - {name: tauB, symbol: tau_B, meaning: bacterial interface transport coefficient, transform: linear}
+  - {name: DM, symbol: D_M, meaning: macrophage diffusivity, transform: log}
+  - {name: delta, symbol: delta, meaning: macrophage chemotaxis coefficient, transform: log}
+  - {name: dM, symbol: d_M, meaning: macrophage death rate, transform: log}
+  - {name: tauM, symbol: tau_M, meaning: macrophage interface transport coefficient, transform: linear}
+  - {name: M0, symbol: M_0, meaning: reference macrophage density, transform: log}
+  - {name: alpha0, symbol: alpha_0, meaning: basal macrophage recruitment coefficient, transform: linear}
+  - {name: alpha1, symbol: alpha_1, meaning: bacteria-dependent recruitment coefficient, transform: linear}
