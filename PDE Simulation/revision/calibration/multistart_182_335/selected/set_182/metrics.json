@@ -1,0 +1,178 @@
+{
+  "set": 182,
+  "fit": "full",
+  "interface_law": "conservative",
+  "mesh_backend": "original_mshr",
+  "resolution": 32,
+  "mesh_vertices": 1643,
+  "mesh_cells": 3142,
+  "seed": "set_182_legacy_mucus_side.json",
+  "dt": 0.16666666666666666,
+  "train_count": 83,
+  "evaluation_count": 0,
+  "last_train_day": 13.833333333333334,
+  "last_observation_day": 13.833333333333334,
+  "comparison_cutoff_day": 12.000000000000036,
+  "objective_evaluations": 28,
+  "failed_pde_evaluations": 0,
+  "optimizer_jacobian": "discrete tangent",
+  "optimizer_converged": false,
+  "optimizer_message": "The maximum number of function evaluations is exceeded.",
+  "optimizer_nfev": 28,
+  "max_nfev": 28,
+  "elapsed_seconds": 292.0249760000006,
+  "seed_and_bounds": {
+    "DB1": [
+      0.06,
+      1e-09,
+      1.0
+    ],
+    "DB2": [
+      0.005184,
+      1e-09,
+      1.0
+    ],
+    "lambdaB": [
+      0.341999999999999,
+      1e-05,
+      10.0
+    ],
+    "KB": [
+      0.12243,
+      1e-09,
+      1.0
+    ],
+    "KBi": [
+      1.8095e-06,
+      1e-09,
+      1.0
+    ],
+    "dMb": [
+      0.000768813599999999,
+      1e-08,
+      10.0
+    ],
+    "dB": [
+      0.00442450128190118,
+      1e-09,
+      1.0
+    ],
+    "tauB": [
+      0.0606993,
+      1e-09,
+      1.0
+    ],
+    "DM": [
+      0.00340253219999999,
+      1e-09,
+      1.0
+    ],
+    "delta": [
+      0.00599999999999999,
+      1e-09,
+      1.0
+    ],
+    "dM": [
+      2.01211799999999e-07,
+      1e-09,
+      1.0
+    ],
+    "tauM": [
+      0.04258867893967187,
+      1e-09,
+      1.0
+    ],
+    "M0": [
+      0.05979268,
+      0.0001,
+      0.75
+    ],
+    "alpha0": [
+      1e-09,
+      1e-09,
+      100.0
+    ],
+    "alpha1": [
+      0.0599997719999999,
+      0.0,
+      100.0
+    ]
+  },
+  "fixed_parameters": {
+    "Dm": 1e-06,
+    "dm": 0.16416,
+    "m0": 0.001,
+    "beta0": 1.0,
+    "beta1": 5.98
+  },
+  "fitted_parameters": {
+    "DB1": 0.9998824703415959,
+    "DB2": 0.14621114729766088,
+    "lambdaB": 0.30355246428286986,
+    "KB": 0.9859618071887016,
+    "KBi": 0.0006699605853006069,
+    "dMb": 2.9059997157874342e-05,
+    "dB": 3.6009010236666654e-06,
+    "tauB": 0.03459588538995706,
+    "DM": 0.002013762371432027,
+    "delta": 0.0002644844506394831,
+    "dM": 0.0111135650694645,
+    "tauM": 0.02431056097809159,
+    "M0": 0.00010000038220089305,
+    "alpha0": 0.00022126703365407213,
+    "alpha1": 99.97099158397162
+  },
+  "training": {
+    "bacteria": {
+      "rmse": 5.539551072336894e-06,
+      "relative_rmse_pct": 14.674353914604321,
+      "relative_l2_pct": 20.554919732934874
+    },
+    "macrophages": {
+      "rmse": 3.099122630923427e-05,
+      "relative_rmse_pct": 3.5327045276435034,
+      "relative_l2_pct": 3.4824515894895174
+    }
+  },
+  "through_cutoff": {
+    "bacteria": {
+      "rmse": 1.4280001376313658e-06,
+      "relative_rmse_pct": 13.367298797122205,
+      "relative_l2_pct": 10.038283599605432
+    },
+    "macrophages": {
+      "rmse": 3.185290772519206e-05,
+      "relative_rmse_pct": 3.430304977324574,
+      "relative_l2_pct": 3.4612567265968086
+    }
+  },
+  "after_cutoff": {
+    "kind": "in_sample",
+    "count": 11,
+    "first_day": 12.166666666666634,
+    "errors": {
+      "bacteria": {
+        "rmse": 1.477149801165e-05,
+        "relative_rmse_pct": 21.33636728866942,
+        "relative_l2_pct": 22.914066336561444
+      },
+      "macrophages": {
+        "rmse": 2.461725259187377e-05,
+        "relative_rmse_pct": 4.140889947304626,
+        "relative_l2_pct": 3.7435354271032937
+      }
+    },
+    "persistence_errors": {
+      "bacteria": {
+        "rmse": 2.524053604323807e-05,
+        "relative_rmse_pct": 34.13370906700589,
+        "relative_l2_pct": 39.154005694546555
+      },
+      "macrophages": {
+        "rmse": 3.972125146797138e-05,
+        "relative_rmse_pct": 6.539971810660318,
+        "relative_l2_pct": 6.040394293566099
+      }
+    }
+  }
+}

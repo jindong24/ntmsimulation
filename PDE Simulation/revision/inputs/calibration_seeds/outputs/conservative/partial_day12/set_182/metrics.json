@@ -1,0 +1,174 @@
+{
+  "set": 182,
+  "fit": "partial",
+  "interface_law": "conservative",
+  "mesh_backend": "rectangle",
+  "resolution": 16,
+  "dt": 0.16666666666666666,
+  "train_count": 72,
+  "evaluation_count": 11,
+  "last_train_day": 12.000000000000036,
+  "last_observation_day": 13.833333333333334,
+  "comparison_cutoff_day": 12.000000000000036,
+  "objective_evaluations": 383,
+  "failed_pde_evaluations": 0,
+  "optimizer_converged": true,
+  "optimizer_message": "`xtol` termination condition is satisfied.",
+  "optimizer_nfev": 38,
+  "max_nfev": 40,
+  "elapsed_seconds": 410.5415476670023,
+  "seed_and_bounds": {
+    "DB1": [
+      1.0,
+      1e-11,
+      1.0
+    ],
+    "DB2": [
+      0.8014163436903259,
+      1e-09,
+      1.0
+    ],
+    "lambdaB": [
+      0.29164979878715414,
+      1e-05,
+      10.0
+    ],
+    "KB": [
+      1.0,
+      1e-09,
+      1.0
+    ],
+    "KBi": [
+      0.9999999562710943,
+      1e-09,
+      1.0
+    ],
+    "dMb": [
+      1.000000055640395e-08,
+      1e-08,
+      10.0
+    ],
+    "dB": [
+      1.000000000000004e-09,
+      1e-09,
+      1.0
+    ],
+    "kappaB": [
+      0.029249839559617227,
+      1e-09,
+      1.0
+    ],
+    "DM": [
+      0.002149672403476823,
+      1e-09,
+      1.0
+    ],
+    "delta": [
+      1.1166416582036252e-09,
+      1e-09,
+      1.0
+    ],
+    "dM": [
+      0.016240985983577802,
+      1e-09,
+      1.0
+    ],
+    "kappaM": [
+      0.022529325750102375,
+      1e-09,
+      1.0
+    ],
+    "M0": [
+      0.007162484708448889,
+      0.0001,
+      0.75
+    ],
+    "alpha0": [
+      8.949333363660361e-07,
+      1e-09,
+      100.0
+    ],
+    "alpha1": [
+      99.94906016989995,
+      0.0,
+      100.0
+    ]
+  },
+  "fixed_parameters": {
+    "Dm": 1e-06,
+    "dm": 0.16416,
+    "m0": 0.001,
+    "beta0": 1.0,
+    "beta1": 5.98
+  },
+  "fitted_parameters": {
+    "DB1": 0.9999999995586977,
+    "DB2": 0.9800333840202051,
+    "lambdaB": 0.2961567692747736,
+    "KB": 0.9999999661293274,
+    "KBi": 0.14973425264136983,
+    "dMb": 1.000000000054316e-08,
+    "dB": 1.000000000000004e-09,
+    "kappaB": 0.03129555460573407,
+    "DM": 0.0027601822214460207,
+    "delta": 1.0019625028677182e-09,
+    "dM": 0.007933931248839413,
+    "kappaM": 0.024689021883127955,
+    "M0": 0.00010213092993287307,
+    "alpha0": 1.0000207780879335e-09,
+    "alpha1": 99.61028853143993
+  },
+  "training": {
+    "bacteria": {
+      "rmse": 2.2341032928360368e-06,
+      "relative_rmse_pct": 12.460469855230038,
+      "relative_l2_pct": 15.70487414763109
+    },
+    "macrophages": {
+      "rmse": 3.114869444441812e-05,
+      "relative_rmse_pct": 3.2026793837080367,
+      "relative_l2_pct": 3.3847342635279234
+    }
+  },
+  "through_cutoff": {
+    "bacteria": {
+      "rmse": 2.2341032928360368e-06,
+      "relative_rmse_pct": 12.460469855230038,
+      "relative_l2_pct": 15.70487414763109
+    },
+    "macrophages": {
+      "rmse": 3.114869444441812e-05,
+      "relative_rmse_pct": 3.2026793837080367,
+      "relative_l2_pct": 3.3847342635279234
+    }
+  },
+  "after_cutoff": {
+    "kind": "holdout",
+    "count": 11,
+    "first_day": 12.166666666666634,
+    "errors": {
+      "bacteria": {
+        "rmse": 1.9483397289391475e-05,
+        "relative_rmse_pct": 28.651922884006098,
+        "relative_l2_pct": 30.22332992893449
+      },
+      "macrophages": {
+        "rmse": 4.34751703909249e-05,
+        "relative_rmse_pct": 7.016828857884977,
+        "relative_l2_pct": 6.611251192649503
+      }
+    },
+    "persistence_errors": {
+      "bacteria": {
+        "rmse": 2.524053604323807e-05,
+        "relative_rmse_pct": 34.13370906700589,
+        "relative_l2_pct": 39.154005694546555
+      },
+      "macrophages": {
+        "rmse": 3.972125146797138e-05,
+        "relative_rmse_pct": 6.539971810660318,
+        "relative_l2_pct": 6.040394293566099
+      }
+    }
+  }
+}

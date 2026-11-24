@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dolfin xmlns:dolfin="http://fenicsproject.org">
+    <parameters name="problem_parameters">
+        <parameter key="dt" type="double" value="1e-4"/>
+        <parameter key="T" type="double" value="0.1"/>
+        <parameter key="DB1" type="double" value="1e-6"/>     <!-- table -->
+        <parameter key="DB2" type="double" value="8.64e−7"/>  <!-- table -->
+        <parameter key="DM" type="double" value="8.64e−8"/>   <!-- table -->
+        <parameter key="Dm" type="double" value="1e-6"/>      <!-- unknown -->
+        <parameter key="lambdaB" type="double" value="2.11E-03"/> <!-- excel -->
+        <parameter key="KB" type="double" value="0.139755"/> <!-- excel -->
+        <parameter key="dMb" type="double" value="1"/>    <!-- excel -->
+        <parameter key="KBi" type="double" value="1.8095e-06"/>  <!-- excel -->
+        <parameter key="dB" type="double" value="2.3928748214804774"/>  <!-- excel -->
+        <parameter key="dM" type="double" value="0.004836189723300406"/>  <!-- excel -->
+        <parameter key="delta" type="double" value="10"/>     <!-- table -->
+        <parameter key="alpha0" type="double" value="2.684085296431725"/> <!-- excel -->
+        <parameter key="alpha1" type="double" value="0"/>  <!-- excel -->
+        <parameter key="M0" type="double" value="0.0023121300000000003"/>  <!-- excel -->
+        <parameter key="beta0" type="double" value="1"/>   <!-- unknown -->
+        <parameter key="beta1" type="double" value="5.98"/>  <!-- excel -->
+        <parameter key="m0" type="double" value="1e-3"/>   <!-- unknown -->
+        <parameter key="dm" type="double" value="0.16416"/>  <!-- excel -->
+        <parameter key="tauM" type="double" value="2"/>   <!-- unknown -->
+        <parameter key="tauB" type="double" value="1"/>    <!-- unknown -->
+    <parameter key="lambdaB1" type="double" value="0.00055849959951428"/>
+        <parameter key="lambdaB2" type="double" value="0.000675973053620404"/>
+        <parameter key="dm1" type="double" value="0.11232"/>
+        <parameter key="dm2" type="double" value="0.216"/>
+        </parameters>
+</dolfin>

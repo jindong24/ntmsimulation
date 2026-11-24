@@ -1,0 +1,174 @@
+{
+  "set": 843,
+  "fit": "full",
+  "interface_law": "conservative",
+  "mesh_backend": "rectangle",
+  "resolution": 16,
+  "dt": 0.16666666666666666,
+  "train_count": 83,
+  "evaluation_count": 0,
+  "last_train_day": 13.833333333333334,
+  "last_observation_day": 13.833333333333334,
+  "comparison_cutoff_day": 11.000000000000034,
+  "objective_evaluations": 535,
+  "failed_pde_evaluations": 0,
+  "optimizer_converged": false,
+  "optimizer_message": "The maximum number of function evaluations is exceeded.",
+  "optimizer_nfev": 40,
+  "max_nfev": 40,
+  "elapsed_seconds": 431.79546400000254,
+  "seed_and_bounds": {
+    "DB1": [
+      0.005,
+      1e-09,
+      1.0
+    ],
+    "DB2": [
+      0.005,
+      1e-09,
+      1.0
+    ],
+    "lambdaB": [
+      0.2,
+      1e-05,
+      10.0
+    ],
+    "KB": [
+      0.01,
+      1e-09,
+      1.0
+    ],
+    "KBi": [
+      0.0001,
+      1e-09,
+      1.0
+    ],
+    "dMb": [
+      0.0001,
+      1e-08,
+      10.0
+    ],
+    "dB": [
+      0.01,
+      1e-09,
+      1.0
+    ],
+    "kappaB": [
+      0.001,
+      1e-09,
+      1.0
+    ],
+    "DM": [
+      0.001,
+      1e-09,
+      1.0
+    ],
+    "delta": [
+      0.0001,
+      1e-09,
+      1.0
+    ],
+    "dM": [
+      0.1,
+      1e-09,
+      1.0
+    ],
+    "kappaM": [
+      0.01,
+      1e-09,
+      1.0
+    ],
+    "M0": [
+      0.01,
+      0.0001,
+      0.75
+    ],
+    "alpha0": [
+      0.001,
+      1e-09,
+      100.0
+    ],
+    "alpha1": [
+      0.1,
+      0.0,
+      100.0
+    ]
+  },
+  "fixed_parameters": {
+    "Dm": 1e-06,
+    "dm": 0.16416,
+    "m0": 0.001,
+    "beta0": 1.0,
+    "beta1": 5.98
+  },
+  "fitted_parameters": {
+    "DB1": 0.00016397483231955152,
+    "DB2": 0.054313549732308994,
+    "lambdaB": 0.2166427694726351,
+    "KB": 0.2580190247576162,
+    "KBi": 0.0013166179555207252,
+    "dMb": 8.461454089917475e-06,
+    "dB": 1.012558793406656e-09,
+    "kappaB": 0.011915693675397276,
+    "DM": 0.0002019250991875544,
+    "delta": 0.003736207730168505,
+    "dM": 0.009543867767574994,
+    "kappaM": 0.08786427435196174,
+    "M0": 0.007543941469688103,
+    "alpha0": 0.0005660402935017599,
+    "alpha1": 4.353948847701691
+  },
+  "training": {
+    "bacteria": {
+      "rmse": 4.2806761476098623e-07,
+      "relative_rmse_pct": 4.699375875850613,
+      "relative_l2_pct": 4.912160656364746
+    },
+    "macrophages": {
+      "rmse": 2.602915285554547e-05,
+      "relative_rmse_pct": 1.650978839327543,
+      "relative_l2_pct": 1.7919822073756297
+    }
+  },
+  "through_cutoff": {
+    "bacteria": {
+      "rmse": 2.2704595022149074e-07,
+      "relative_rmse_pct": 4.71048414414334,
+      "relative_l2_pct": 4.400552351344554
+    },
+    "macrophages": {
+      "rmse": 2.7438194155982806e-05,
+      "relative_rmse_pct": 1.6671920608395674,
+      "relative_l2_pct": 1.8269257703233819
+    }
+  },
+  "after_cutoff": {
+    "kind": "in_sample",
+    "count": 17,
+    "first_day": 11.166666666666634,
+    "errors": {
+      "bacteria": {
+        "rmse": 8.333767342848447e-07,
+        "relative_rmse_pct": 4.655998490895845,
+        "relative_l2_pct": 5.096136643671377
+      },
+      "macrophages": {
+        "rmse": 1.9622162382468152e-05,
+        "relative_rmse_pct": 1.5864637951479625,
+        "relative_l2_pct": 1.5792113761771687
+      }
+    },
+    "persistence_errors": {
+      "bacteria": {
+        "rmse": 5.958229421416676e-06,
+        "relative_rmse_pct": 32.412807987777896,
+        "relative_l2_pct": 36.43484397478291
+      },
+      "macrophages": {
+        "rmse": 5.1022871342173545e-05,
+        "relative_rmse_pct": 4.130160178988553,
+        "relative_l2_pct": 4.1063720347547825
+      }
+    }
+  }
+}

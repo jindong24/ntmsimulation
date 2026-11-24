@@ -1,0 +1,178 @@
+{
+  "set": 335,
+  "fit": "full",
+  "interface_law": "conservative",
+  "mesh_backend": "original_mshr",
+  "resolution": 32,
+  "mesh_vertices": 1643,
+  "mesh_cells": 3142,
+  "seed": "set_335_near_current.json",
+  "dt": 0.16666666666666666,
+  "train_count": 83,
+  "evaluation_count": 0,
+  "last_train_day": 13.833333333333334,
+  "last_observation_day": 13.833333333333334,
+  "comparison_cutoff_day": 12.000000000000036,
+  "objective_evaluations": 19,
+  "failed_pde_evaluations": 0,
+  "optimizer_jacobian": "discrete tangent",
+  "optimizer_converged": true,
+  "optimizer_message": "`ftol` termination condition is satisfied.",
+  "optimizer_nfev": 19,
+  "max_nfev": 28,
+  "elapsed_seconds": 184.33616962500673,
+  "seed_and_bounds": {
+    "DB1": [
+      0.8333333333333282,
+      1e-09,
+      1.0
+    ],
+    "DB2": [
+      0.8333333192300968,
+      1e-09,
+      1.0
+    ],
+    "lambdaB": [
+      0.3399607012266515,
+      1e-05,
+      10.0
+    ],
+    "KB": [
+      0.833333333333332,
+      1e-09,
+      1.0
+    ],
+    "KBi": [
+      0.7836657093821024,
+      1e-09,
+      1.0
+    ],
+    "dMb": [
+      1.2983795384737097e-08,
+      1e-08,
+      10.0
+    ],
+    "dB": [
+      1.2000000496929694e-09,
+      1e-09,
+      1.0
+    ],
+    "tauB": [
+      0.02916308502046463,
+      1e-09,
+      1.0
+    ],
+    "DM": [
+      0.0010326610332922312,
+      1e-09,
+      1.0
+    ],
+    "delta": [
+      3.587574974412567e-07,
+      1e-09,
+      1.0
+    ],
+    "dM": [
+      0.008924619993711648,
+      1e-09,
+      1.0
+    ],
+    "tauM": [
+      0.009632917794418211,
+      1e-09,
+      1.0
+    ],
+    "M0": [
+      0.015140829221862119,
+      0.0001,
+      0.75
+    ],
+    "alpha0": [
+      0.00021660059280735502,
+      1e-09,
+      100.0
+    ],
+    "alpha1": [
+      0.05000177194482662,
+      0.0,
+      100.0
+    ]
+  },
+  "fixed_parameters": {
+    "Dm": 1e-06,
+    "dm": 0.16416,
+    "m0": 0.001,
+    "beta0": 1.0,
+    "beta1": 5.98
+  },
+  "fitted_parameters": {
+    "DB1": 0.999999999999282,
+    "DB2": 0.9298524463605793,
+    "lambdaB": 0.28330078339475645,
+    "KB": 0.9999999999987099,
+    "KBi": 0.9999954504171491,
+    "dMb": 1.0000048767925125e-08,
+    "dB": 1.000000000000004e-09,
+    "tauB": 0.03499944384150341,
+    "DM": 0.0008592231213649111,
+    "delta": 1.911420149787037e-09,
+    "dM": 0.007416870749457601,
+    "tauM": 0.011562716130883239,
+    "M0": 0.015431420395685864,
+    "alpha0": 0.000209951631945533,
+    "alpha1": 0.06162759632330296
+  },
+  "training": {
+    "bacteria": {
+      "rmse": 1.391595939950906e-05,
+      "relative_rmse_pct": 21.729072366102546,
+      "relative_l2_pct": 44.36898801734231
+    },
+    "macrophages": {
+      "rmse": 2.1095697928655404e-05,
+      "relative_rmse_pct": 1.7911511652587575,
+      "relative_l2_pct": 1.938494247688772
+    }
+  },
+  "through_cutoff": {
+    "bacteria": {
+      "rmse": 2.637280261379819e-06,
+      "relative_rmse_pct": 15.874409219505004,
+      "relative_l2_pct": 19.497771228409206
+    },
+    "macrophages": {
+      "rmse": 2.2170525733488664e-05,
+      "relative_rmse_pct": 1.855768611436556,
+      "relative_l2_pct": 1.9939343657732982
+    }
+  },
+  "after_cutoff": {
+    "kind": "in_sample",
+    "count": 11,
+    "first_day": 12.166666666666634,
+    "errors": {
+      "bacteria": {
+        "rmse": 3.762554507244022e-05,
+        "relative_rmse_pct": 43.73981972783826,
+        "relative_l2_pct": 47.688352691472055
+      },
+      "macrophages": {
+        "rmse": 1.1859188564564688e-05,
+        "relative_rmse_pct": 1.2906416027112617,
+        "relative_l2_pct": 1.2910602301056575
+      }
+    },
+    "persistence_errors": {
+      "bacteria": {
+        "rmse": 3.929872895209208e-05,
+        "relative_rmse_pct": 42.09842112690333,
+        "relative_l2_pct": 49.809023177890296
+      },
+      "macrophages": {
+        "rmse": 2.5121925230219268e-05,
+        "relative_rmse_pct": 2.788957168117032,
+        "relative_l2_pct": 2.7349188683395016
+      }
+    }
+  }
+}

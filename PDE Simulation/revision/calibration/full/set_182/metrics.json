@@ -1,0 +1,178 @@
+{
+  "set": 182,
+  "fit": "full",
+  "interface_law": "conservative",
+  "mesh_backend": "original_mshr",
+  "resolution": 32,
+  "mesh_vertices": 1643,
+  "mesh_cells": 3142,
+  "seed": "outputs/conservative/182_335_multistart/joint/182/full/strong_exchange/metrics.json",
+  "dt": 0.16666666666666666,
+  "train_count": 83,
+  "evaluation_count": 0,
+  "last_train_day": 13.833333333333334,
+  "last_observation_day": 13.833333333333334,
+  "comparison_cutoff_day": 12.000000000000036,
+  "objective_evaluations": 11,
+  "failed_pde_evaluations": 0,
+  "optimizer_jacobian": "discrete tangent",
+  "optimizer_converged": true,
+  "optimizer_message": "`ftol` termination condition is satisfied.",
+  "optimizer_nfev": 11,
+  "max_nfev": 18,
+  "elapsed_seconds": 182.88842124999792,
+  "seed_and_bounds": {
+    "DB1": [
+      0.9999999982811213,
+      1e-09,
+      1.0
+    ],
+    "DB2": [
+      0.9023082991546217,
+      1e-09,
+      1.0
+    ],
+    "lambdaB": [
+      0.30327359567446194,
+      1e-05,
+      10.0
+    ],
+    "KB": [
+      0.9999999997929936,
+      1e-09,
+      1.0
+    ],
+    "KBi": [
+      0.004258003816340297,
+      1e-09,
+      1.0
+    ],
+    "dMb": [
+      0.00015111786595214802,
+      1e-08,
+      10.0
+    ],
+    "dB": [
+      1.440862185342515e-08,
+      1e-09,
+      1.0
+    ],
+    "tauB": [
+      0.03452877952277558,
+      1e-09,
+      1.0
+    ],
+    "DM": [
+      0.00020217233466940466,
+      1e-09,
+      1.0
+    ],
+    "delta": [
+      0.020955495541273763,
+      1e-09,
+      1.0
+    ],
+    "dM": [
+      0.03961840434019189,
+      1e-09,
+      1.0
+    ],
+    "tauM": [
+      0.17187231895236246,
+      1e-09,
+      1.0
+    ],
+    "M0": [
+      0.0025173814981720903,
+      0.0001,
+      0.75
+    ],
+    "alpha0": [
+      0.3575116757091902,
+      1e-09,
+      100.0
+    ],
+    "alpha1": [
+      9.245167771179142,
+      0.0,
+      100.0
+    ]
+  },
+  "fixed_parameters": {
+    "Dm": 1e-06,
+    "dm": 0.16416,
+    "m0": 0.001,
+    "beta0": 1.0,
+    "beta1": 5.98
+  },
+  "fitted_parameters": {
+    "DB1": 1.0,
+    "DB2": 0.5344735345470832,
+    "lambdaB": 0.30357973898805557,
+    "KB": 1.0,
+    "KBi": 0.6989641412992427,
+    "dMb": 2.3410129168098718e-08,
+    "dB": 1.000000545820262e-09,
+    "tauB": 0.034388579481832326,
+    "DM": 0.00020568566701395846,
+    "delta": 0.17730798687544835,
+    "dM": 0.039215846352695684,
+    "tauM": 0.20107159863731727,
+    "M0": 0.002351314631959581,
+    "alpha0": 64.4838960004252,
+    "alpha1": 0.023120965868292875
+  },
+  "training": {
+    "bacteria": {
+      "rmse": 5.54086024255647e-06,
+      "relative_rmse_pct": 14.673047598288916,
+      "relative_l2_pct": 20.559777507225377
+    },
+    "macrophages": {
+      "rmse": 3.0671261922962084e-05,
+      "relative_rmse_pct": 3.5708485646018717,
+      "relative_l2_pct": 3.4464975270579306
+    }
+  },
+  "through_cutoff": {
+    "bacteria": {
+      "rmse": 1.4285369021746317e-06,
+      "relative_rmse_pct": 13.364344042786339,
+      "relative_l2_pct": 10.042056844838065
+    },
+    "macrophages": {
+      "rmse": 3.1648495044147716e-05,
+      "relative_rmse_pct": 3.511885556255065,
+      "relative_l2_pct": 3.439044476042776
+    }
+  },
+  "after_cutoff": {
+    "kind": "in_sample",
+    "count": 11,
+    "first_day": 12.166666666666634,
+    "errors": {
+      "bacteria": {
+        "rmse": 1.4774862872346541e-05,
+        "relative_rmse_pct": 21.341703180802213,
+        "relative_l2_pct": 22.91928602661272
+      },
+      "macrophages": {
+        "rmse": 2.328308473649815e-05,
+        "relative_rmse_pct": 3.935030837152186,
+        "relative_l2_pct": 3.5406490727604965
+      }
+    },
+    "persistence_errors": {
+      "bacteria": {
+        "rmse": 2.524053604323807e-05,
+        "relative_rmse_pct": 34.13370906700589,
+        "relative_l2_pct": 39.154005694546555
+      },
+      "macrophages": {
+        "rmse": 3.972125146797138e-05,
+        "relative_rmse_pct": 6.539971810660318,
+        "relative_l2_pct": 6.040394293566099
+      }
+    }
+  }
+}

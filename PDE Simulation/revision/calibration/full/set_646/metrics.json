@@ -1,0 +1,178 @@
+{
+  "set": 646,
+  "fit": "full",
+  "interface_law": "conservative",
+  "mesh_backend": "original_mshr",
+  "resolution": 32,
+  "mesh_vertices": 1643,
+  "mesh_cells": 3142,
+  "seed": "outputs/conservative/ten_sets_11days/set_646/full/metrics.json",
+  "dt": 0.16666666666666666,
+  "train_count": 83,
+  "evaluation_count": 0,
+  "last_train_day": 13.833333333333334,
+  "last_observation_day": 13.833333333333334,
+  "comparison_cutoff_day": 12.000000000000036,
+  "objective_evaluations": 18,
+  "failed_pde_evaluations": 0,
+  "optimizer_jacobian": "discrete tangent",
+  "optimizer_converged": false,
+  "optimizer_message": "The maximum number of function evaluations is exceeded.",
+  "optimizer_nfev": 18,
+  "max_nfev": 18,
+  "elapsed_seconds": 383.48899912499473,
+  "seed_and_bounds": {
+    "DB1": [
+      3.649631767323591e-05,
+      1e-09,
+      1.0
+    ],
+    "DB2": [
+      0.012312317433257315,
+      1e-09,
+      1.0
+    ],
+    "lambdaB": [
+      0.00968398702626335,
+      1e-05,
+      10.0
+    ],
+    "KB": [
+      1.584802455296619e-07,
+      1e-09,
+      1.0
+    ],
+    "KBi": [
+      4.6560634312500726e-05,
+      1e-09,
+      1.0
+    ],
+    "dMb": [
+      0.000178412540040488,
+      1e-08,
+      10.0
+    ],
+    "dB": [
+      0.0066107119303680725,
+      1e-09,
+      1.0
+    ],
+    "tauB": [
+      4.7685148975478514e-05,
+      1e-09,
+      1.0
+    ],
+    "DM": [
+      0.00494778972741783,
+      1e-09,
+      1.0
+    ],
+    "delta": [
+      0.0495731257593612,
+      1e-09,
+      1.0
+    ],
+    "dM": [
+      8.666490644236818e-05,
+      1e-09,
+      1.0
+    ],
+    "tauM": [
+      0.02918029663025644,
+      1e-09,
+      1.0
+    ],
+    "M0": [
+      0.150626192746023,
+      0.0001,
+      0.75
+    ],
+    "alpha0": [
+      0.004220776818984916,
+      1e-09,
+      100.0
+    ],
+    "alpha1": [
+      94.23555885204992,
+      0.0,
+      100.0
+    ]
+  },
+  "fixed_parameters": {
+    "Dm": 1e-06,
+    "dm": 0.16416,
+    "m0": 0.001,
+    "beta0": 1.0,
+    "beta1": 5.98
+  },
+  "fitted_parameters": {
+    "DB1": 2.0662469715598227e-05,
+    "DB2": 0.08298705268665604,
+    "lambdaB": 0.029052800329623377,
+    "KB": 4.3161339651986284e-07,
+    "KBi": 4.391312451421786e-05,
+    "dMb": 0.00015086176034428365,
+    "dB": 0.0001956037286989789,
+    "tauB": 3.442425026739934e-09,
+    "DM": 0.005480253029103374,
+    "delta": 0.9953354550970849,
+    "dM": 1.1844390663200327e-08,
+    "tauM": 0.03119746737467482,
+    "M0": 0.21467871762595725,
+    "alpha0": 0.0027291410866756996,
+    "alpha1": 97.33341877783434
+  },
+  "training": {
+    "bacteria": {
+      "rmse": 1.0604763634470012e-07,
+      "relative_rmse_pct": 8.89580802553175,
+      "relative_l2_pct": 9.915849210023504
+    },
+    "macrophages": {
+      "rmse": 0.00018533301709271652,
+      "relative_rmse_pct": 1.9272830029507237,
+      "relative_l2_pct": 1.094298830035833
+    }
+  },
+  "through_cutoff": {
+    "bacteria": {
+      "rmse": 1.1166218634033328e-07,
+      "relative_rmse_pct": 9.261476667676744,
+      "relative_l2_pct": 10.29743244437954
+    },
+    "macrophages": {
+      "rmse": 0.0001668030641385681,
+      "relative_rmse_pct": 2.0338920301138788,
+      "relative_l2_pct": 1.164502288229925
+    }
+  },
+  "after_cutoff": {
+    "kind": "in_sample",
+    "count": 11,
+    "first_day": 12.166666666666634,
+    "errors": {
+      "bacteria": {
+        "rmse": 5.696764605607768e-08,
+        "relative_rmse_pct": 5.972983347040525,
+        "relative_l2_pct": 5.895182716247591
+      },
+      "macrophages": {
+        "rmse": 0.00027759294607492213,
+        "relative_rmse_pct": 0.9748301626360228,
+        "relative_l2_pct": 0.9686080699049712
+      }
+    },
+    "persistence_errors": {
+      "bacteria": {
+        "rmse": 4.343385776096799e-08,
+        "relative_rmse_pct": 4.62098856886006,
+        "relative_l2_pct": 4.494665749754945
+      },
+      "macrophages": {
+        "rmse": 0.00284123587859867,
+        "relative_rmse_pct": 9.611388190000751,
+        "relative_l2_pct": 9.9139550893755
+      }
+    }
+  }
+}

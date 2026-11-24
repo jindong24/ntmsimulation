@@ -1,0 +1,2 @@
+parameter,design_minimum,design_maximum,sample_minimum,sample_maximum,provenance
+tauB,3.442425026739934e-09,0.9977085798710266,3.5272981002586352e-09,0.9737019347724982,Original tau ranks mapped to log-stratum centers of full refit range; cm/day

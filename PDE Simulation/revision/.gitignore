@@ -1,0 +1,7 @@
+/runs/
+/experiments/*/results/
+/experiments/interface_macrophage/comparison.json
+/calibration/multistart_182_335/runs/
+/calibration/multistart_182_335/seeds/
+/reproduce/figures/figures/
+*.dylib

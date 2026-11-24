@@ -1,0 +1,2 @@
+# Keep archived parameter XML byte-for-byte identical to the source inputs.
+*.xml -text -whitespace

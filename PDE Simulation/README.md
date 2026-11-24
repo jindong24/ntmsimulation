@@ -1,5 +1,10 @@
 # Lung Bacteria PDE Reproducibility Repository
 
+The [manuscript revision workflows](revision/README.md) live in a separate
+directory. They use the original mshr mesh and include revised calibration,
+validation, sensitivity, treatment, and figure code. The workflows described
+below are the original version and remain available for comparison.
+
 ## Scientific Scope
 
 This repository contains the simulation workflows for a coupled lung infection
@@ -7,8 +12,8 @@ PDE model. The five finite-element state variables are mucus bacteria `B1`,
 tissue bacteria `B2`, mucus macrophages `M1`, tissue macrophages `M2`, and
 mucus density `m`. The repository supports calibration against ABM mucus
 trajectories, calibrated baseline simulation, mucus-velocity simulation, and a
-two-parameter `danti`/`eta` treatment sweep. Plotting and manuscript figure
-generation are intentionally outside this repository.
+two-parameter `danti`/`eta` treatment sweep. For plotting and manuscript
+figures, see the revision workflows above.
 
 ## Geometry and Supported Sets
 

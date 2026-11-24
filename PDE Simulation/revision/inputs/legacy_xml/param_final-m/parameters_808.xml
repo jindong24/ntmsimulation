@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dolfin>
+    <parameters name="problem_parameters">
+        <parameter key="dt" type="double" value="1e-4"/>
+        <parameter key="T" type="double" value="0.1"/>
+        <parameter key="DB1" type="double" value="0.0239999999999999"/>     
+        <parameter key="DB2" type="double" value="0.005184"/>  
+        <parameter key="DM" type="double" value="0.0025180224"/>   
+        <parameter key="Dm" type="double" value="1e-06"/>      
+        <parameter key="lambdaB" type="double" value="0.15"/> 
+        <parameter key="KB" type="double" value="0.15246"/> 
+        <parameter key="dMb" type="double" value="0.000113833199999999"/>    
+        <parameter key="KBi" type="double" value="1.8095e-06"/>  
+        <parameter key="dB" type="double" value="0.0038521512298625"/>  
+        <parameter key="dM" type="double" value="8.88342599999999e-07"/>  
+        <parameter key="delta" type="double" value="0.00599999999999999"/>     
+        <parameter key="alpha0" type="double" value="2.290539e-06"/> 
+        <parameter key="alpha1" type="double" value="0.0599999639999999"/>  
+        <parameter key="M0" type="double" value="0.06055002"/>  
+        <parameter key="beta0" type="double" value="1"/>   
+        <parameter key="beta1" type="double" value="5.98"/>  
+        <parameter key="m0" type="double" value="0.001"/>   
+        <parameter key="dm" type="double" value="1.000000e-10"/>  
+        <parameter key="tauM" type="double" value="12.12617"/>   
+        <parameter key="tauB" type="double" value="0.9953234"/>    
+    <parameter key="lambdaB1" type="double" value="0.00055849959951428"/>
+        <parameter key="lambdaB2" type="double" value="0.000675973053620404"/>
+        <parameter key="dm1" type="double" value="0.11232"/>
+        <parameter key="dm2" type="double" value="0.216"/>
+        <parameter key="loss" type="double" value="1.219302e-01"/><parameter key="Kbi" type="double" value="1.617e-06"/>
+        </parameters>
+</dolfin>
